@@ -1,0 +1,17 @@
+noReset=false
+platformVersion=10
+platformName=Android
+deviceName=213c4c203c017ece
+udid=213c4c203c017ece
+appActivity=com.vodafone.meinvodafonereactpoc.MainActivity
+appPackage=com.vodafone.meinvodafonereactpoc
+seFirstMatch=true
+skipDeviceInitialization=true
+skipServerInstallation=true
+ignoreUnimportantViews=true
+unicodeKeyboard=true
+resetKeyboard=true
+automationName=Appium
+useKeystore=true
+autoGrantPermissions=true
+URL=http://127.0.0.1:4723/wd/hub
