@@ -36,6 +36,7 @@ public class CommanlyUsedFunctions {
 	public void WaitingWebElemnt(WebElement WEBElmt, int TimeoutIntegar) {
 		WaitingObj = new WebDriverWait(AppDriver, TimeoutIntegar);
 		WaitingObj.until(ExpectedConditions.visibilityOf(WEBElmt));
+
 	}
 
 	public void ImageApperance(WebElement WEBElmt, int TimeoutIntegar) {

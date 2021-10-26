@@ -9,25 +9,32 @@ import io.appium.java_client.AppiumDriver;
 
 public class DummyPageElementInitlization {
 	// Elements Initializations
-	@FindBy(how = How.XPATH, using = "//android.widget.TextView[@content-desc='TitleID']")
+	//@FindBy(how = How.XPATH, using = "//android.widget.TextView[@content-desc='TitleID']")
+	@FindBy(how = How.ID, using = "TitleID")
 	WebElement Title;
 
-	@FindBy(how = How.XPATH, using = "//android.widget.TextView[@content-desc='DescriptionID']")
+	//@FindBy(how = How.XPATH, using = "//android.widget.TextView[@content-desc='DescriptionID']")
+	@FindBy(how = How.ID, using = "DescriptionID")
 	WebElement Body;
 
-	@FindBy(how = How.XPATH, using = "//android.widget.Button[@content-desc='BottomSheetID']")
+	//@FindBy(how = How.XPATH, using = "//android.widget.Button[@content-desc='BottomSheetID']")
+	@FindBy(how = How.ID, using = "BottomSheetID")
 	WebElement BottomSheetBtn;
 
-	@FindBy(how = How.XPATH, using = "//android.widget.Button[@content-desc='NativeShareID']")
+	//@FindBy(how = How.XPATH, using = "//android.widget.Button[@content-desc='NativeShareID']")
+	@FindBy(how = How.ID, using = "NativeShareID")
 	WebElement NativeShareBtn;
 	
-	@FindBy(how = How.XPATH, using = "//android.widget.TextView[@content-desc='BottomSheetTextID']")
+	//@FindBy(how = How.XPATH, using = "//android.widget.TextView[@content-desc='BottomSheetTextID']")
+	@FindBy(how = How.ID, using = "BottomSheetTextID")
 	WebElement BottomSheetTopUpTitle;
 	
-	@FindBy(how = How.XPATH, using = "//android.widget.Button[@content-desc='BottomSheetDismissID']")
+	//@FindBy(how = How.XPATH, using = "//android.widget.Button[@content-desc='BottomSheetDismissID']")
+	@FindBy(how = How.ID, using = "BottomSheetDismissID")
 	WebElement BottomSheetTopUpDismissBtn;
 	
-	@FindBy(how = How.XPATH, using = "//android.widget.ImageView[@content-desc='BottomSheetImageID']")
+	//@FindBy(how = How.XPATH, using = "//android.widget.ImageView[@content-desc='BottomSheetImageID']")
+	@FindBy(how = How.ID, using = "BottomSheetImageID")
 	WebElement BottomSheetTopUpImage;
 	
 	@FindBy(how = How.XPATH, using = "(//android.widget.TextView)[1]")
