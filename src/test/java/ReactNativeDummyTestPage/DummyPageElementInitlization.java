@@ -39,7 +39,7 @@ public class DummyPageElementInitlization {
 	
 	@FindBy(how = How.XPATH, using = "(//android.widget.TextView)[1]")
 	WebElement NativeShareScreenTitle;
-
+ 
 	@FindBy(how = How.XPATH, using = "//*[@resource-id='android:id/chooser_row_text_option']")
 	WebElement NativeShareScreenCommunicationDailog;
 
