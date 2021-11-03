@@ -58,7 +58,6 @@ public class RecyclerViewActions {
 
 	@SuppressWarnings("rawtypes")
 	public void swipeScreen(Direction dir, AppiumDriver<?> driver2) {
-		System.out.println("swipeScreen(): dir: '" + dir + "'");
 		final int ANIMATION_TIME = 300; // ms
 		final int PRESS_TIME = 1; // ms
 		int edgeBorder = 10;
@@ -104,7 +103,7 @@ public class RecyclerViewActions {
 				index++;
 			} else {
 				swipeScreen(Direction.UP, Driver);
-				if (index==101)
+				if (index==10)
 					break;
 			}
 		}

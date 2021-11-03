@@ -33,9 +33,28 @@ public class CommanlyUsedFunctions {
 		}
 	}
 
+	public void WritingText(WebElement WEBElmt, String Text) {
+
+		WEBElmt.click();
+		WEBElmt.clear();
+		WEBElmt.sendKeys(Text);
+
+	}
+
 	public void WaitingWebElemnt(WebElement WEBElmt, int TimeoutIntegar) {
 		WaitingObj = new WebDriverWait(AppDriver, TimeoutIntegar);
 		WaitingObj.until(ExpectedConditions.visibilityOf(WEBElmt));
+
+	}
+
+	public Boolean FoundElmt(WebElement WEBElmt, int TimeoutIntegar) {
+		try {
+			WaitingObj = new WebDriverWait(AppDriver, TimeoutIntegar);
+			WaitingObj.until(ExpectedConditions.visibilityOf(WEBElmt));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 
 	}
 
